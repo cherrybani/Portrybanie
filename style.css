@@ -1,7 +1,18 @@
+/* style.css */
+
+/* Style default (desktop) */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style khusus buat layar kecil */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     text-align: center;
+    gap: 10px;
   }
 
   h1 {
@@ -272,4 +283,5 @@ span:nth-child(10){
   z-index: 2; /* Pastikan ini di atas background animasi */
   margin-bottom: 10%;
 }
+
 
