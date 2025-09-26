@@ -1,0 +1,144 @@
+/* Gaya Umum */
+.body {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.name {
+    display: flex;
+    justify-content: center; /* Memposisikan item horizontal di tengah */
+    color:rgb(255, 255, 255);
+    font-family: "Libertinus Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: rgb(45, 45, 45);
+    block-size: auto;
+    padding: 15px 30px;
+    border-radius: 10px;
+    max-width: fit-content;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-menu-box {
+    /* Style untuk kotak itu sendiri */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    background-color: rgb(45, 45, 45); /* warna background nyatu */
+    block-size: auto;
+    padding: 15px 30px;
+    border-radius: 10px;
+    max-width: fit-content;
+    gap: 6px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn {
+  background:var(--accent);
+  color:#fff; /* biar teks putih */
+  text-decoration:none; /* ilangin underline kalau itu <a> */
+  border:none;
+  padding:10px 16px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight: 600px;
+  text-align: center;
+  font-size:17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover{
+  background: #000000; /* warna hover */
+  color: #fff; /* tetep putih */
+}
+
+header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #000000;
+}
+
+/* Tata Letak Proyek */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.card-content p {
+    margin: 0 0 15px 0;
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
